@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Insight Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="postlist.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        
+        <header class="header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/cadb7bc280dd1a6d34c296f6fcbc9d578edd3773?apiKey=e10dbafdfd534539bd27071f578fc572&" alt="Logo" class="logo">
+           <!-- 桌機用選單 -->
+  <nav class="nav-links">
+    <a href="#" class="nav-item">全部</a>
+    <a href="#" class="nav-item">數位生活</a>
+    <a href="#" class="nav-item">美食體驗</a>
+    <a href="#" class="nav-item">傳統智慧</a>
+    <a href="#" class="nav-item">專業能力提升</a>
+    <a href="#" class="nav-item">生活美學</a>
+    <a href="#" class="nav-item">投資智慧</a>
+  </nav>
+
+  <!-- 漢堡按鈕（手機版） -->
+  <button class="hamburger" id="hamburger" aria-label="開啟選單">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<!-- 手機右側滑出選單 -->
+<div class="drawer" id="drawer">
+  <button class="close-btn" id="closeDrawer" aria-label="關閉選單"><img src="img/ic_round-close.svg" alt=""></button>
+  <a href="#" class="nav-item">全部</a>
+  <a href="#" class="nav-item">數位生活</a>
+  <a href="#" class="nav-item">美食體驗</a>
+  <a href="#" class="nav-item">傳統智慧</a>
+  <a href="#" class="nav-item">專業能力提升</a>
+  <a href="#" class="nav-item">生活美學</a>
+  <a href="#" class="nav-item">投資智慧</a>
+</div>
+        </header>
+
+        <main>
+         <!-- 頁面內容 -->
+         <section class="poslist-section">
+           內容塞這邊
+        </section>
+        <script src="script.js"></script>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo-container">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/eea8bbc19068af54b3d13edfe7a202e420fef881?apiKey=e10dbafdfd534539bd27071f578fc572&" alt="Footer logo" class="footer-logo">
+                        <button class="subscribe-button">訂閱</button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/7ac70695ac53b26590f122241439bbbcb2cb0053?apiKey=e10dbafdfd534539bd27071f578fc572&" alt="Facebook icon">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/a6aae5fbfc0b9890d4ccf8913854c0fa1eaa67d2?apiKey=e10dbafdfd534539bd27071f578fc572&" alt="Twitter icon">
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/669787cc107492de00db5e1245fa1996fe4ceabd?apiKey=e10dbafdfd534539bd27071f578fc572&" alt="Instagram icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright-text">
+                    Copyright © 2025 Deep!nsight All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+       const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('drawer');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const navItems = drawer.querySelectorAll('.nav-item');
+
+    hamburger.addEventListener('click', () => {
+      drawer.classList.add('open');
+    });
+
+    closeDrawer.addEventListener('click', () => {
+      drawer.classList.remove('open');
+    });
+
+    // 點選選單項目後關閉選單 & 加上選中效果
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navItems.forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+        drawer.classList.remove('open');
+      });
+    });
+      </script>
+
+</body>
+</html>
