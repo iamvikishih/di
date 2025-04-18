@@ -1,265 +1,508 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Insight Blog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="main-container">
-        
-        <header class="header">
-            <a href="index.html"><img src="img/di-logo.svg" alt="Logo" class="logo"></a>
-  <!-- 桌機用選單 -->
-  <nav class="nav-links">
-    <a href="list.html" class="nav-item">全部</a>
-    <a href="#" class="nav-item">數位生活</a>
-    <a href="#" class="nav-item">美食體驗</a>
-    <a href="#" class="nav-item">傳統智慧</a>
-    <a href="#" class="nav-item">專業能力提升</a>
-    <a href="#" class="nav-item">生活美學</a>
-    <a href="#" class="nav-item">投資智慧</a>
-  </nav>
-
-  <!-- 漢堡按鈕（手機版） -->
-  <button class="hamburger" id="hamburger" aria-label="開啟選單">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header>
-
-<!-- 手機右側滑出選單 -->
-<div class="drawer" id="drawer">
-  <button class="close-btn" id="closeDrawer" aria-label="關閉選單"><img src="img/ic_round-close.svg" alt=""></button>
-  <a href="#" class="nav-item">全部</a>
-  <a href="#" class="nav-item">數位生活</a>
-  <a href="#" class="nav-item">美食體驗</a>
-  <a href="#" class="nav-item">傳統智慧</a>
-  <a href="#" class="nav-item">專業能力提升</a>
-  <a href="#" class="nav-item">生活美學</a>
-  <a href="#" class="nav-item">投資智慧</a>
-</div>
-        </header>
-        <main>
-            <section class="hero-section">
-                <h1 class="hero-title">深義洞察<br>透過專業視角看見生活本質</h1>
-                <button class="cta-button">我想訂閱</button>
-            </section>
-            <section class="category-grid">
-                <div class="cat black item-1" onclick="window.location.href='list.html';">數位生活</div>
-                <div class="cat white item-2" onclick="window.location.href='list.html';">美食體驗</div>
-                <div class="cat black item-3" onclick="window.location.href='list.html';">生活美學</div>
-                <div class="cat black item-4" onclick="window.location.href='list.html';">傳統智慧</div>
-                <div class="cat white item-5" onclick="window.location.href='list.html';">專業能力提升</div>
-                <div class="cat black item-6" onclick="window.location.href='list.html';">投資智慧</div>
-              </section>
-            <section class="latest-articles-section">
-                <h2 class="section-title">最新文章</h2>
-                <div class="articles-row">
-                    <article class="article">
-                        <div class="article-category">數位生活</div>
-                        <h3 class="article-title"><a href="#">手機相機也能拍出大片感，跟著做即刻生成</a></h3>
-                        <p class="article-description">不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。</p>
-                        <div class="article-date">2025年10月10日</div>
-                    </article>
-                    <div class="article-image">
-                        <img src="img/p1.png" alt="Article image" class="article-img" onclick="window.location.href='#';">
-                    </div>
-                </div>
-                <div class="articles-row">
-                    <div class="article-image">
-                        <img src="img/p2.png" alt="Article image" class="article-img" onclick="window.location.href='#';">
-                    </div>
-                    <article class="article">
-                        <div class="article-category">數位生活</div>
-                        <h3 class="article-title"><a href="#">手機相機也能拍出大片感，跟著做即刻生成</a></h3>
-                        <p class="article-description">不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。</p>
-                        <div class="article-date">2025年10月10日</div>
-                    </article>
-                </div>
-                <div class="articles-grid">
-                    <article class="article-card">
-                        <img src="img/p1.png" alt="Article image" class="card-image onclick="window.location.href='#';"">
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="#">全球市場對經濟數據的反應</a></h3>
-                            <div class="card-category">美食體驗</div>
-                            <div class="card-date">2025年10月10日</div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="img/p1.png" alt="Article image" class="card-image" onclick="window.location.href='#';">
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="#">新政策變更公告</a></h3>
-                            <div class="card-category">投資智慧</div>
-                            <div class="card-date">2025年10月10日</div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="img/p1.png" alt="Article image" class="card-image" onclick="window.location.href='#';">
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="#">科技巨頭發布季度財報</a></h3>
-                            <div class="card-category">專業能力提升</div>
-                            <div class="card-date">2025年10月10日</div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="img/p1.png" alt="Article image" class="card-image" onclick="window.location.href='#';">
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="#">健康專家討論新發現</a></h3>
-                            <div class="card-category">數位生活</div>
-                            <div class="card-date">2025年10月10日</div>
-                        </div>
-                    </article>
-                </div>
-                <button class="load-more-button">看更多</button>
-            </section>
-            <section class="popular-articles-section">
-                <h2 class="section-title">熱門文章</h2>
-                <div class="popular-articles-row">
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>數位生活</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>美食體驗</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>傳統智慧</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                </div>
-                <div class="popular-articles-row">
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>專業能力提升</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>生活美學</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                    <div class="popular-articles-container">
-                        <div class="popular-article-header">
-                            <h3>投資智慧</h3>
-                            <a href="#" class="view-all">查看全部</a>
-                        </div>
-                        <article class="popular-article-item">
-                            <h4><a href="#">牛津年度風雲字：笑到飆淚表情符號</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                        <article class="popular-article-item">
-                            <h4><a href="#">電信商必須變成一個開放的大平台</a></h4>
-                            <div class="popular-article-date">2025年10月10日</div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <script src="script.js"></script>
-        </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-top">
-                    <div class="footer-logo-container">
-                        <img src="img/di-logo-w.svg" alt="Footer logo" class="footer-logo">
-                        <button class="subscribe-button">訂閱</button>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">
-                            <img src="img/fb-w.svg" alt="Facebook icon">
-                        </a>
-                        <a href="#" class="social-icon" aria-label="Twitter">
-                            <img src="img/yt-w.svg" alt="Twitter icon">
-                        </a>
-                        <a href="#" class="social-icon" aria-label="Instagram">
-                            <img src="img/email-w.svg" alt="Instagram icon">
-                        </a>
-                    </div>
-                </div>
-                <div class="copyright-text">
-                    Copyright © 2025 Deep!nsight All Rights Reserved.
-                </div>
-            </div>
-        </footer>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Deep Insight Blog
+  </title>
+  <link href="main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="main-container">
+   <header class="header">
+    <a href="index.html" class="fade-in-up">
+     <img alt="Logo" class="logo" src="img/di-logo.svg"/>
+    </a>
+    <!-- 桌機用選單 -->
+    <nav class="nav-links fade-in-up">
+     <a class="nav-item" href="list.html">
+      全部
+     </a>
+     <a class="nav-item" href="#">
+      數位生活
+     </a>
+     <a class="nav-item" href="#">
+      美食體驗
+     </a>
+     <a class="nav-item" href="#">
+      傳統智慧
+     </a>
+     <a class="nav-item" href="#">
+      專業能力提升
+     </a>
+     <a class="nav-item" href="#">
+      生活美學
+     </a>
+     <a class="nav-item" href="#">
+      投資智慧
+     </a>
+    </nav>
+    <!-- 漢堡按鈕（手機版） -->
+    <button aria-label="開啟選單" class="hamburger" id="hamburger">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+   </header>
+   <!-- 手機右側滑出選單 -->
+   <div class="drawer" id="drawer">
+    <button aria-label="關閉選單" class="close-btn" id="closeDrawer">
+     <img alt="" src="img/ic_round-close.svg"/>
+    </button>
+    <a class="nav-item" href="#">
+     全部
+    </a>
+    <a class="nav-item" href="#">
+     數位生活
+    </a>
+    <a class="nav-item" href="#">
+     美食體驗
+    </a>
+    <a class="nav-item" href="#">
+     傳統智慧
+    </a>
+    <a class="nav-item" href="#">
+     專業能力提升
+    </a>
+    <a class="nav-item" href="#">
+     生活美學
+    </a>
+    <a class="nav-item" href="#">
+     投資智慧
+    </a>
+   </div>
+   <main class="fade-in-up">
+    <section class="hero-section fade-in-up">
+     <h1 class="hero-title">
+      深義洞察
+      <br/>
+      透過專業視角看見生活本質
+     </h1>
+     <button class="cta-button">
+      我想訂閱
+     </button>
+    </section>
+    <section class="category-grid fade-in-up">
+     <div class="cat black item-1" onclick="window.location.href='list.html';">
+      數位生活
+     </div>
+     <div class="cat white item-2" onclick="window.location.href='list.html';">
+      美食體驗
+     </div>
+     <div class="cat black item-3" onclick="window.location.href='list.html';">
+      生活美學
+     </div>
+     <div class="cat black item-4" onclick="window.location.href='list.html';">
+      傳統智慧
+     </div>
+     <div class="cat white item-5" onclick="window.location.href='list.html';">
+      專業能力提升
+     </div>
+     <div class="cat black item-6" onclick="window.location.href='list.html';">
+      投資智慧
+     </div>
+    </section>
+    <section class="latest-articles-section fade-in-up">
+     <h2 class="section-title">
+      最新文章
+     </h2>
+     <div class="articles-row">
+      <article class="article fade-in-up">
+       <div class="article-category">
+        數位生活
+       </div>
+       <h3 class="article-title">
+        <a href="#">
+         手機相機也能拍出大片感，跟著做即刻生成
+        </a>
+       </h3>
+       <p class="article-description">
+        不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。
+       </p>
+       <div class="article-date">
+        2025年10月10日
+       </div>
+      </article>
+      <div class="article-image">
+       <a href=""><img alt="Article image" class="article-img" src="img/p1.png"/></a>
+      </div>
+     </div>
+     <div class="articles-row">
+      <div class="article-image">
+       <a href=""><img alt="Article image" class="article-img" src="img/p2.png"/></a>
+      </div>
+      <article class="article fade-in-up">
+       <div class="article-category">
+        數位生活
+       </div>
+       <h3 class="article-title">
+        <a href="#">
+         手機相機也能拍出大片感，跟著做即刻生成
+        </a>
+       </h3>
+       <p class="article-description">
+        不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。
+       </p>
+       <div class="article-date">
+        2025年10月10日
+       </div>
+      </article>
+     </div>
+     <div class="articles-grid">
+      <article class="article-card fade-in-up">
+       <a href=""><img alt="Article image" class="card-image" src="img/p1.png"/></a>
+       <div class="card-content">
+        <h3 class="card-title">
+         <a href="#">
+          全球市場對經濟數據的反應
+         </a>
+        </h3>
+        <div class="card-category">
+         美食體驗
+        </div>
+        <div class="card-date">
+         2025年10月10日
+        </div>
+       </div>
+      </article>
+      <article class="article-card fade-in-up">
+        <a href=""><img alt="Article image" class="card-image" src="img/p1.png"/></a>
+       <div class="card-content">
+        <h3 class="card-title">
+         <a href="#">
+          新政策變更公告
+         </a>
+        </h3>
+        <div class="card-category">
+         投資智慧
+        </div>
+        <div class="card-date">
+         2025年10月10日
+        </div>
+       </div>
+      </article>
+      <article class="article-card fade-in-up">
+        <a href=""><img alt="Article image" class="card-image" src="img/p1.png"/></a>
+       <div class="card-content">
+        <h3 class="card-title">
+         <a href="#">
+          科技巨頭發布季度財報
+         </a>
+        </h3>
+        <div class="card-category">
+         專業能力提升
+        </div>
+        <div class="card-date">
+         2025年10月10日
+        </div>
+       </div>
+      </article>
+      <article class="article-card fade-in-up">
+        <a href=""><img alt="Article image" class="card-image"  src="img/p1.png"/></a>
+       <div class="card-content">
+        <h3 class="card-title">
+         <a href="#">
+          健康專家討論新發現
+         </a>
+        </h3>
+        <div class="card-category">
+         數位生活
+        </div>
+        <div class="card-date">
+         2025年10月10日
+        </div>
+       </div>
+      </article>
+     </div>
+     <button class="load-more-button">
+      看更多
+     </button>
+    </section>
+    <section class="popular-articles-section fade-in-up">
+     <h2 class="section-title">
+      熱門文章
+     </h2>
+     <div class="popular-articles-row">
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         數位生活
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         美食體驗
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         傳統智慧
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+     </div>
+     <div class="popular-articles-row">
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         專業能力提升
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         生活美學
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+      <div class="popular-articles-container">
+       <div class="popular-article-header">
+        <h3>
+         投資智慧
+        </h3>
+        <a class="view-all" href="#">
+         查看全部
+        </a>
+       </div>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          牛津年度風雲字：笑到飆淚表情符號
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          科技造浪時代Ⅰ：中國數位生活創業家　把痛點變商機
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+       <article class="popular-article-item fade-in-up">
+        <h4>
+         <a href="#">
+          電信商必須變成一個開放的大平台
+         </a>
+        </h4>
+        <div class="popular-article-date">
+         2025年10月10日
+        </div>
+       </article>
+      </div>
+     </div>
+    </section>
+    <script src="script.js">
+    </script>
+   </main>
+   <footer class="footer">
+    <div class="footer-container">
+     <div class="footer-top">
+      <div class="footer-logo-container">
+       <img alt="Footer logo" class="footer-logo" src="img/di-logo-w.svg"/>
+       <button class="subscribe-button">
+        訂閱
+       </button>
+      </div>
+      <div class="social-icons">
+       <a aria-label="Facebook" class="social-icon" href="#">
+        <img alt="Facebook icon" src="img/fb-w.svg"/>
+       </a>
+       <a aria-label="Twitter" class="social-icon" href="#">
+        <img alt="Twitter icon" src="img/yt-w.svg"/>
+       </a>
+       <a aria-label="Instagram" class="social-icon" href="#">
+        <img alt="Instagram icon" src="img/email-w.svg"/>
+       </a>
+      </div>
+     </div>
+     <div class="copyright-text">
+      Copyright © 2025 Deep!nsight All Rights Reserved.
+     </div>
     </div>
-
-    <script>
-    const hamburger = document.getElementById('hamburger');
+   </footer>
+  </div>
+  <script>
+   const hamburger = document.getElementById('hamburger');
     const drawer = document.getElementById('drawer');
     const closeDrawer = document.getElementById('closeDrawer');
     const navItems = drawer.querySelectorAll('.nav-item');
@@ -280,7 +523,21 @@
         drawer.classList.remove('open');
       });
     });
-      </script>
+  </script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.1 });
 
-</body>
+  document.querySelectorAll('.fade-in-up').forEach(el => {
+    observer.observe(el);
+  });
+});
+  </script>
+ </body>
 </html>

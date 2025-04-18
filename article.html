@@ -1,88 +1,128 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Insight Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="postlist.css">
-    <link rel="stylesheet" href="articlestyle.css">
-    
-</head>
-<body>
-    <div class="list-container">
-        
-        <header class="header">
-          <a href="index.html"><img src="img/di-logo.svg" alt="Logo" class="logo"></a>
-           <!-- 桌機用選單 -->
-  <nav class="nav-links">
-    <a href="#" class="nav-item active">全部</a>
-    <a href="#" class="nav-item">數位生活</a>
-    <a href="#" class="nav-item">美食體驗</a>
-    <a href="#" class="nav-item">傳統智慧</a>
-    <a href="#" class="nav-item">專業能力提升</a>
-    <a href="#" class="nav-item">生活美學</a>
-    <a href="#" class="nav-item">投資智慧</a>
-  </nav>
-
-  <!-- 漢堡按鈕（手機版） -->
-  <button class="hamburger" id="hamburger" aria-label="開啟選單">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header>
-
-<!-- 手機右側滑出選單 -->
-<div class="drawer" id="drawer">
-  <button class="close-btn" id="closeDrawer" aria-label="關閉選單"><img src="img/ic_round-close.svg" alt=""></button>
-  <a href="#" class="nav-item">全部</a>
-  <a href="#" class="nav-item">數位生活</a>
-  <a href="#" class="nav-item">美食體驗</a>
-  <a href="#" class="nav-item">傳統智慧</a>
-  <a href="#" class="nav-item">專業能力提升</a>
-  <a href="#" class="nav-item">生活美學</a>
-  <a href="#" class="nav-item">投資智慧</a>
-</div>
-     </header>
-        <main>
-            <div class="artdetail-container">
-                <div class="artdetail-content">
-                  <div class="artdetail-header">
-                    <h1 class="artdetail-title">手機相機也能拍出大片感，跟著做即刻生成</h1>
-                    <div class="artdetail-meta">
-                      <div class="artdetail-category-date">
-                        <p class="artdetail-category">數位生活</p>
-                        <p class="artdetail-date">2025年10月10日 作者:Joe hsu</p>
-                      </div>
-                      <div class="social-icons">
-                        <a href="#" class="social-icon facebook" aria-label="Share on Facebook">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                        <a href="#" class="social-icon line" aria-label="Share on Line">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.365 9.86301C19.5279 9.86949 19.6819 9.93876 19.7949 10.0563C19.9078 10.1738 19.9709 10.3305 19.9709 10.4935C19.9709 10.6565 19.9078 10.8132 19.7949 10.9307C19.6819 11.0483 19.5279 11.1175 19.365 11.124H17.61V12.249H19.365C19.4498 12.2456 19.5344 12.2594 19.6137 12.2895C19.693 12.3196 19.7654 12.3655 19.8266 12.4242C19.8878 12.483 19.9365 12.5536 19.9697 12.6316C20.003 12.7097 20.0201 12.7937 20.0201 12.8785C20.0201 12.9634 20.003 13.0473 19.9697 13.1254C19.9365 13.2034 19.8878 13.274 19.8266 13.3328C19.7654 13.3916 19.693 13.4374 19.6137 13.4675C19.5344 13.4976 19.4498 13.5114 19.365 13.508H16.979C16.8126 13.5072 16.6533 13.4406 16.5358 13.3228C16.4183 13.2049 16.3523 13.0454 16.352 12.879V8.10801C16.352 7.76301 16.634 7.47801 16.982 7.47801H19.368C19.5351 7.4784 19.6952 7.54516 19.813 7.66359C19.9309 7.78202 19.9969 7.94242 19.9965 8.10951C19.9961 8.27659 19.9293 8.43668 19.8109 8.55454C19.6925 8.67241 19.5321 8.7384 19.365 8.73801H17.61V9.86301H19.365ZM15.51 12.879C15.5092 13.0457 15.4423 13.2054 15.3241 13.3229C15.2058 13.4404 15.0457 13.5063 14.879 13.506C14.7802 13.508 14.6824 13.4863 14.5937 13.4428C14.505 13.3994 14.4279 13.3353 14.369 13.256L11.926 9.93901V12.879C11.915 13.0382 11.844 13.1873 11.7273 13.2961C11.6107 13.405 11.4571 13.4656 11.2975 13.4656C11.1379 13.4656 10.9843 13.405 10.8677 13.2961C10.751 13.1873 10.68 13.0382 10.669 12.879V8.10801C10.6687 7.94206 10.7343 7.78278 10.8512 7.66506C10.9682 7.54735 11.1271 7.4808 11.293 7.48001C11.488 7.48001 11.668 7.58401 11.788 7.73401L14.25 11.064V8.10801C14.25 7.76301 14.532 7.47801 14.88 7.47801C15.225 7.47801 15.51 7.76301 15.51 8.10801V12.879ZM9.769 12.879C9.76887 12.9617 9.75244 13.0436 9.72066 13.12C9.68888 13.1964 9.64236 13.2658 9.58377 13.3242C9.52518 13.3826 9.45565 13.4289 9.37917 13.4604C9.30268 13.492 9.22073 13.5081 9.138 13.508C8.97161 13.5072 8.81228 13.4406 8.69481 13.3228C8.57734 13.2049 8.51126 13.0454 8.511 12.879V8.10801C8.511 7.76301 8.793 7.47801 9.141 7.47801C9.487 7.47801 9.769 7.76301 9.769 8.10801V12.879ZM7.303 13.508H4.917C4.75041 13.507 4.59092 13.4404 4.47303 13.3227C4.35514 13.205 4.28831 13.0456 4.287 12.879V8.10801C4.287 7.76301 4.572 7.47801 4.917 7.47801C5.265 7.47801 5.547 7.76301 5.547 8.10801V12.249H7.303C7.46561 12.2555 7.61941 13.3246 7.73217 12.442C7.84493 12.5593 7.90791 12.7158 7.90791 12.8785C7.90791 13.0412 7.84493 13.1977 7.73217 13.315C7.61941 13.4324 7.46561 13.5015 7.303 13.508ZM24 10.314C24 4.94301 18.615 0.572006 12 0.572006C5.385 0.572006 0 4.94301 0 10.314C0 15.125 4.27 19.156 10.035 19.922C10.426 20.004 10.958 20.18 11.093 20.512C11.213 20.813 11.172 21.278 11.131 21.592L10.967 22.612C10.922 22.913 10.727 23.798 12.016 23.257C13.307 22.718 18.932 19.179 21.452 16.282C23.176 14.393 24 12.458 24 10.314Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                        <a href="#" class="social-icon link" aria-label="Copy link">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.8284 12L16.2434 13.414L19.0714 10.586C19.8216 9.83584 20.243 8.8184 20.243 7.7575C20.243 6.69661 19.8216 5.67917 19.0714 4.929C18.7 4.55756 18.259 4.26291 17.7737 4.06189C17.2884 3.86087 16.7682 3.7574 16.2429 3.7574C15.182 3.7574 14.1646 4.17884 13.4144 4.929L10.5864 7.757L12.0004 9.172L14.8284 6.343C15.2036 5.96785 15.7124 5.7571 16.2429 5.7571C16.7735 5.7571 17.2823 5.96785 17.6574 6.343C18.0326 6.71815 18.2433 7.22696 18.2433 7.7575C18.2433 8.28804 18.0326 8.79686 17.6574 9.172L14.8284 12ZM12.0004 14.829L13.4144 16.243L10.5864 19.071C9.83625 19.8212 8.81881 20.2426 7.75792 20.2426C6.69702 20.2426 5.67958 19.8212 4.92942 19.071C4.17925 18.3208 3.75781 17.3034 3.75781 16.2425C3.75781 15.1816 4.17925 14.1642 4.92942 13.414L7.75742 10.586L9.17242 12L6.34342 14.829C5.9684 15.2042 5.75777 15.7129 5.75786 16.2434C5.75796 16.7738 5.96877 17.2825 6.34392 17.6575C6.71906 18.0325 7.22782 18.2431 7.75827 18.2431C8.28872 18.243 8.7974 18.0322 9.17242 17.657L12.0004 14.829Z" fill="currentColor"/>
-                            <path d="M14.8295 10.586C15.0171 10.3984 15.1225 10.1439 15.1225 9.8785C15.1225 9.61314 15.0171 9.35864 14.8295 9.171C14.6418 8.98336 14.3873 8.87794 14.122 8.87794C13.8566 8.87794 13.6021 8.98336 13.4145 9.171L9.17248 13.414C9.07697 13.5062 9.00078 13.6166 8.94837 13.7386C8.89597 13.8606 8.86838 13.9918 8.86723 14.1246C8.86607 14.2574 8.89137 14.3891 8.94165 14.512C8.99193 14.6349 9.06619 14.7465 9.16008 14.8404C9.25397 14.9343 9.36562 15.0085 9.48852 15.0588C9.61142 15.1091 9.7431 15.1344 9.87588 15.1333C10.0087 15.1321 10.1399 15.1045 10.2619 15.0521C10.3839 14.9997 10.4942 14.9235 10.5865 14.828L14.8295 10.586Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="artdetail-summary">
-                    不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。
-                  </p>
-                  <div class="artdetail-image-container">
-                    <img src="img/p1.png" alt="Hands joined together showing wedding rings" class="artdetail-image">
-                  </div>
-                  <p class="artdetail-body">
-                    睡前是放鬆身心的好時機，這時候如果能讓心情沉澱，鬆開身體，對睡眠品質很有幫助。呂大文醫師自己也會用以下兩種方法，來放鬆已經工作一整天的眼睛，消除疲勞。
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Deep Insight Blog
+  </title>
+  <link href="main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="list-container">
+    <header class="header">
+      <a href="index.html" class="fade-in-up">
+       <img alt="Logo" class="logo" src="img/di-logo.svg"/>
+      </a>
+      <!-- 桌機用選單 -->
+      <nav class="nav-links fade-in-up">
+     <a class="nav-item active" href="#">
+      全部
+     </a>
+     <a class="nav-item" href="#">
+      數位生活
+     </a>
+     <a class="nav-item" href="#">
+      美食體驗
+     </a>
+     <a class="nav-item" href="#">
+      傳統智慧
+     </a>
+     <a class="nav-item" href="#">
+      專業能力提升
+     </a>
+     <a class="nav-item" href="#">
+      生活美學
+     </a>
+     <a class="nav-item" href="#">
+      投資智慧
+     </a>
+    </nav>
+    <!-- 漢堡按鈕（手機版） -->
+    <button aria-label="開啟選單" class="hamburger" id="hamburger">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+   </header>
+   <!-- 手機右側滑出選單 -->
+   <div class="drawer" id="drawer">
+    <button aria-label="關閉選單" class="close-btn" id="closeDrawer">
+     <img alt="" src="img/ic_round-close.svg"/>
+    </button>
+    <a class="nav-item" href="#">
+     全部
+    </a>
+    <a class="nav-item" href="#">
+     數位生活
+    </a>
+    <a class="nav-item" href="#">
+     美食體驗
+    </a>
+    <a class="nav-item" href="#">
+     傳統智慧
+    </a>
+    <a class="nav-item" href="#">
+     專業能力提升
+    </a>
+    <a class="nav-item" href="#">
+     生活美學
+    </a>
+    <a class="nav-item" href="#">
+     投資智慧
+    </a>
+   </div>
+   <main class="fade-in-up">
+    <div class="artdetail-container">
+     <div class="artdetail-content">
+      <div class="artdetail-header">
+       <h1 class="artdetail-title">
+        手機相機也能拍出大片感，跟著做即刻生成
+       </h1>
+       <div class="artdetail-meta">
+        <div class="artdetail-category-date">
+         <p class="artdetail-category">
+          數位生活
+         </p>
+         <p class="artdetail-date">
+          2025年10月10日 作者:Joe hsu
+         </p>
+        </div>
+        <div class="social-icons">
+         <a aria-label="Share on Facebook" class="social-icon facebook" href="#">
+          <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="currentColor">
+           </path>
+          </svg>
+         </a>
+         <a aria-label="Share on Line" class="social-icon line" href="#">
+          <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M19.365 9.86301C19.5279 9.86949 19.6819 9.93876 19.7949 10.0563C19.9078 10.1738 19.9709 10.3305 19.9709 10.4935C19.9709 10.6565 19.9078 10.8132 19.7949 10.9307C19.6819 11.0483 19.5279 11.1175 19.365 11.124H17.61V12.249H19.365C19.4498 12.2456 19.5344 12.2594 19.6137 12.2895C19.693 12.3196 19.7654 12.3655 19.8266 12.4242C19.8878 12.483 19.9365 12.5536 19.9697 12.6316C20.003 12.7097 20.0201 12.7937 20.0201 12.8785C20.0201 12.9634 20.003 13.0473 19.9697 13.1254C19.9365 13.2034 19.8878 13.274 19.8266 13.3328C19.7654 13.3916 19.693 13.4374 19.6137 13.4675C19.5344 13.4976 19.4498 13.5114 19.365 13.508H16.979C16.8126 13.5072 16.6533 13.4406 16.5358 13.3228C16.4183 13.2049 16.3523 13.0454 16.352 12.879V8.10801C16.352 7.76301 16.634 7.47801 16.982 7.47801H19.368C19.5351 7.4784 19.6952 7.54516 19.813 7.66359C19.9309 7.78202 19.9969 7.94242 19.9965 8.10951C19.9961 8.27659 19.9293 8.43668 19.8109 8.55454C19.6925 8.67241 19.5321 8.7384 19.365 8.73801H17.61V9.86301H19.365ZM15.51 12.879C15.5092 13.0457 15.4423 13.2054 15.3241 13.3229C15.2058 13.4404 15.0457 13.5063 14.879 13.506C14.7802 13.508 14.6824 13.4863 14.5937 13.4428C14.505 13.3994 14.4279 13.3353 14.369 13.256L11.926 9.93901V12.879C11.915 13.0382 11.844 13.1873 11.7273 13.2961C11.6107 13.405 11.4571 13.4656 11.2975 13.4656C11.1379 13.4656 10.9843 13.405 10.8677 13.2961C10.751 13.1873 10.68 13.0382 10.669 12.879V8.10801C10.6687 7.94206 10.7343 7.78278 10.8512 7.66506C10.9682 7.54735 11.1271 7.4808 11.293 7.48001C11.488 7.48001 11.668 7.58401 11.788 7.73401L14.25 11.064V8.10801C14.25 7.76301 14.532 7.47801 14.88 7.47801C15.225 7.47801 15.51 7.76301 15.51 8.10801V12.879ZM9.769 12.879C9.76887 12.9617 9.75244 13.0436 9.72066 13.12C9.68888 13.1964 9.64236 13.2658 9.58377 13.3242C9.52518 13.3826 9.45565 13.4289 9.37917 13.4604C9.30268 13.492 9.22073 13.5081 9.138 13.508C8.97161 13.5072 8.81228 13.4406 8.69481 13.3228C8.57734 13.2049 8.51126 13.0454 8.511 12.879V8.10801C8.511 7.76301 8.793 7.47801 9.141 7.47801C9.487 7.47801 9.769 7.76301 9.769 8.10801V12.879ZM7.303 13.508H4.917C4.75041 13.507 4.59092 13.4404 4.47303 13.3227C4.35514 13.205 4.28831 13.0456 4.287 12.879V8.10801C4.287 7.76301 4.572 7.47801 4.917 7.47801C5.265 7.47801 5.547 7.76301 5.547 8.10801V12.249H7.303C7.46561 12.2555 7.61941 13.3246 7.73217 12.442C7.84493 12.5593 7.90791 12.7158 7.90791 12.8785C7.90791 13.0412 7.84493 13.1977 7.73217 13.315C7.61941 13.4324 7.46561 13.5015 7.303 13.508ZM24 10.314C24 4.94301 18.615 0.572006 12 0.572006C5.385 0.572006 0 4.94301 0 10.314C0 15.125 4.27 19.156 10.035 19.922C10.426 20.004 10.958 20.18 11.093 20.512C11.213 20.813 11.172 21.278 11.131 21.592L10.967 22.612C10.922 22.913 10.727 23.798 12.016 23.257C13.307 22.718 18.932 19.179 21.452 16.282C23.176 14.393 24 12.458 24 10.314Z" fill="currentColor">
+           </path>
+          </svg>
+         </a>
+         <a aria-label="Copy link" class="social-icon link" href="#">
+          <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M14.8284 12L16.2434 13.414L19.0714 10.586C19.8216 9.83584 20.243 8.8184 20.243 7.7575C20.243 6.69661 19.8216 5.67917 19.0714 4.929C18.7 4.55756 18.259 4.26291 17.7737 4.06189C17.2884 3.86087 16.7682 3.7574 16.2429 3.7574C15.182 3.7574 14.1646 4.17884 13.4144 4.929L10.5864 7.757L12.0004 9.172L14.8284 6.343C15.2036 5.96785 15.7124 5.7571 16.2429 5.7571C16.7735 5.7571 17.2823 5.96785 17.6574 6.343C18.0326 6.71815 18.2433 7.22696 18.2433 7.7575C18.2433 8.28804 18.0326 8.79686 17.6574 9.172L14.8284 12ZM12.0004 14.829L13.4144 16.243L10.5864 19.071C9.83625 19.8212 8.81881 20.2426 7.75792 20.2426C6.69702 20.2426 5.67958 19.8212 4.92942 19.071C4.17925 18.3208 3.75781 17.3034 3.75781 16.2425C3.75781 15.1816 4.17925 14.1642 4.92942 13.414L7.75742 10.586L9.17242 12L6.34342 14.829C5.9684 15.2042 5.75777 15.7129 5.75786 16.2434C5.75796 16.7738 5.96877 17.2825 6.34392 17.6575C6.71906 18.0325 7.22782 18.2431 7.75827 18.2431C8.28872 18.243 8.7974 18.0322 9.17242 17.657L12.0004 14.829Z" fill="currentColor">
+           </path>
+           <path d="M14.8295 10.586C15.0171 10.3984 15.1225 10.1439 15.1225 9.8785C15.1225 9.61314 15.0171 9.35864 14.8295 9.171C14.6418 8.98336 14.3873 8.87794 14.122 8.87794C13.8566 8.87794 13.6021 8.98336 13.4145 9.171L9.17248 13.414C9.07697 13.5062 9.00078 13.6166 8.94837 13.7386C8.89597 13.8606 8.86838 13.9918 8.86723 14.1246C8.86607 14.2574 8.89137 14.3891 8.94165 14.512C8.99193 14.6349 9.06619 14.7465 9.16008 14.8404C9.25397 14.9343 9.36562 15.0085 9.48852 15.0588C9.61142 15.1091 9.7431 15.1344 9.87588 15.1333C10.0087 15.1321 10.1399 15.1045 10.2619 15.0521C10.3839 14.9997 10.4942 14.9235 10.5865 14.828L14.8295 10.586Z" fill="currentColor">
+           </path>
+          </svg>
+         </a>
+        </div>
+       </div>
+      </div>
+      <p class="artdetail-summary">
+       不需要昂貴的單眼相機，只要善用手機的相機功能與幾個拍照技巧，也能拍出專業感十足的生活照。首先，光線是關鍵，利用自然光可以讓照片更具層次與氛圍；其次，構圖也很重要，運用「三分法」讓主體更突出；最後，後製也別忽略，使用如Lightroom或VSCO等App稍作調整。
+      </p>
+      <div class="artdetail-image-container">
+       <img alt="Hands joined together showing wedding rings" class="artdetail-image" src="img/p1.png"/>
+      </div>
+      <p class="artdetail-body">
+       睡前是放鬆身心的好時機，這時候如果能讓心情沉澱，鬆開身體，對睡眠品質很有幫助。呂大文醫師自己也會用以下兩種方法，來放鬆已經工作一整天的眼睛，消除疲勞。
                     消除眼睛疲勞A餐：眨眼運動 促進淚液及油脂分泌，緩解眼睛乾澀
                     步驟①：闔上雙眼2秒（眼皮緊閉） 步驟②：緊閉雙眼2秒（眉頭可以輕皺）
                     步驟③：張開雙眼2秒 每天可以做5到10個循環 消除眼睛疲勞B餐：熱敷VS冷敷
@@ -90,67 +130,90 @@
                     Continuing from where the last message ended:
               
                     呂大文醫師自己也會熱敷雙眼，大家可以選擇自己用毛巾加熱或是用市面上拋棄式的蒸氣眼罩。熱敷的原理是讓血管擴張，促進血液循環，同時能放鬆眼周的肌肉，大多都能消除眼睛的疲勞感。
-                  </p>
-                  <div class="cta-container">
-                    <button class="cta-button">立即加入</button>
-                  </div>
-                </div>
-                <div class="related-artdetails">
-                  <h2 class="related-title">延伸閱讀</h2>
-                  <div class="related-list">
-                    <a href="#" class="related-item">
-                      <h3 class="related-item-title">不靠499方案 老電信如何讓阿里巴巴搶著合作?</h3>
-                      <p class="related-item-meta">
-                        <span class="related-item-date">2025年10月10日 /</span>
-                        <span class="related-item-category">數位生活</span>
-                      </p>
-                    </a>
-                    <a href="#" class="related-item">
-                      <h3 class="related-item-title">跳脫簡訊低價戰，老電信轉型當潮牌！</h3>
-                      <p class="related-item-meta">
-                        <span class="related-item-date">2025年10月10日 /</span>
-                        <span class="related-item-category">數位生活</span>
-                      </p>
-                    </a>
-                    <a href="#" class="related-item">
-                      <h3 class="related-item-title">吳學蘭：電信商必須變成一個開放的大平台</h3>
-                      <p class="related-item-meta">
-                        <span class="related-item-date">2025年10月10日 /</span>
-                        <span class="related-item-category">數位生活</span>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-        </main>
-        <footer class="footer">
-          <div class="footer-container">
-              <div class="footer-top">
-                  <div class="footer-logo-container">
-                      <img src="img/di-logo-w.svg" alt="Footer logo" class="footer-logo">
-                      <button class="subscribe-button">訂閱</button>
-                  </div>
-                  <div class="social-icons">
-                      <a href="#" class="social-icon" aria-label="Facebook">
-                          <img src="img/fb-w.svg" alt="Facebook icon">
-                      </a>
-                      <a href="#" class="social-icon" aria-label="Twitter">
-                          <img src="img/yt-w.svg" alt="Twitter icon">
-                      </a>
-                      <a href="#" class="social-icon" aria-label="Instagram">
-                          <img src="img/email-w.svg" alt="Instagram icon">
-                      </a>
-                  </div>
-              </div>
-              <div class="copyright-text">
-                  Copyright © 2025 Deep!nsight All Rights Reserved.
-              </div>
-          </div>
-      </footer>
+      </p>
+      <div class="cta-container">
+       <button class="cta-button">
+        立即加入
+       </button>
+      </div>
+     </div>
+     <div class="related-artdetails">
+      <h2 class="related-title">
+       延伸閱讀
+      </h2>
+      <div class="related-list">
+       <a class="related-item" href="#">
+        <h3 class="related-item-title">
+         不靠499方案 老電信如何讓阿里巴巴搶著合作?
+        </h3>
+        <p class="related-item-meta">
+         <span class="related-item-date">
+          2025年10月10日 /
+         </span>
+         <span class="related-item-category">
+          數位生活
+         </span>
+        </p>
+       </a>
+       <a class="related-item" href="#">
+        <h3 class="related-item-title">
+         跳脫簡訊低價戰，老電信轉型當潮牌！
+        </h3>
+        <p class="related-item-meta">
+         <span class="related-item-date">
+          2025年10月10日 /
+         </span>
+         <span class="related-item-category">
+          數位生活
+         </span>
+        </p>
+       </a>
+       <a class="related-item" href="#">
+        <h3 class="related-item-title">
+         吳學蘭：電信商必須變成一個開放的大平台
+        </h3>
+        <p class="related-item-meta">
+         <span class="related-item-date">
+          2025年10月10日 /
+         </span>
+         <span class="related-item-category">
+          數位生活
+         </span>
+        </p>
+       </a>
+      </div>
+     </div>
     </div>
-
-    <script>
-       const hamburger = document.getElementById('hamburger');
+   </main>
+   <footer class="footer">
+    <div class="footer-container">
+     <div class="footer-top">
+      <div class="footer-logo-container">
+       <img alt="Footer logo" class="footer-logo" src="img/di-logo-w.svg"/>
+       <button class="subscribe-button">
+        訂閱
+       </button>
+      </div>
+      <div class="social-icons">
+       <a aria-label="Facebook" class="social-icon" href="#">
+        <img alt="Facebook icon" src="img/fb-w.svg"/>
+       </a>
+       <a aria-label="Twitter" class="social-icon" href="#">
+        <img alt="Twitter icon" src="img/yt-w.svg"/>
+       </a>
+       <a aria-label="Instagram" class="social-icon" href="#">
+        <img alt="Instagram icon" src="img/email-w.svg"/>
+       </a>
+      </div>
+     </div>
+     <div class="copyright-text">
+      Copyright © 2025 Deep!nsight All Rights Reserved.
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+   const hamburger = document.getElementById('hamburger');
     const drawer = document.getElementById('drawer');
     const closeDrawer = document.getElementById('closeDrawer');
     const navItems = drawer.querySelectorAll('.nav-item');
@@ -171,7 +234,21 @@
         drawer.classList.remove('open');
       });
     });
-      </script>
+  </script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.1 });
 
-</body>
+  document.querySelectorAll('.fade-in-up').forEach(el => {
+    observer.observe(el);
+  });
+});
+  </script>
+ </body>
 </html>

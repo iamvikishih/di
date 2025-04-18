@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Deep Insight Blog
+  </title>
+  <link href="main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="main-container">
+    <header class="header">
+      <a href="index.html" class="fade-in-up">
+       <img alt="Logo" class="logo" src="img/di-logo.svg"/>
+      </a>
+      <!-- 桌機用選單 -->
+      <nav class="nav-links fade-in-up">
+     <a class="nav-item" href="#">
+      全部
+     </a>
+     <a class="nav-item" href="#">
+      數位生活
+     </a>
+     <a class="nav-item" href="#">
+      美食體驗
+     </a>
+     <a class="nav-item" href="#">
+      傳統智慧
+     </a>
+     <a class="nav-item" href="#">
+      專業能力提升
+     </a>
+     <a class="nav-item" href="#">
+      生活美學
+     </a>
+     <a class="nav-item" href="#">
+      投資智慧
+     </a>
+    </nav>
+    <!-- 漢堡按鈕（手機版） -->
+    <button aria-label="開啟選單" class="hamburger" id="hamburger">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+   </header>
+   <!-- 手機右側滑出選單 -->
+   <div class="drawer" id="drawer">
+    <button aria-label="關閉選單" class="close-btn" id="closeDrawer">
+     <img alt="" src="img/ic_round-close.svg"/>
+    </button>
+    <a class="nav-item" href="#">
+     全部
+    </a>
+    <a class="nav-item" href="#">
+     數位生活
+    </a>
+    <a class="nav-item" href="#">
+     美食體驗
+    </a>
+    <a class="nav-item" href="#">
+     傳統智慧
+    </a>
+    <a class="nav-item" href="#">
+     專業能力提升
+    </a>
+    <a class="nav-item" href="#">
+     生活美學
+    </a>
+    <a class="nav-item" href="#">
+     投資智慧
+    </a>
+   </div>
+   <main>
+    <!-- 頁面內容 -->
+    <section class="poslist-section">
+     內容塞這邊
+    </section>
+    <script src="script.js">
+    </script>
+   </main>
+   <footer class="footer">
+    <div class="footer-container">
+     <div class="footer-top">
+      <div class="footer-logo-container">
+       <img alt="Footer logo" class="footer-logo" src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/eea8bbc19068af54b3d13edfe7a202e420fef881?apiKey=e10dbafdfd534539bd27071f578fc572&amp;"/>
+       <button class="subscribe-button">
+        訂閱
+       </button>
+      </div>
+      <div class="social-icons">
+       <a aria-label="Facebook" class="social-icon" href="#">
+        <img alt="Facebook icon" src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/7ac70695ac53b26590f122241439bbbcb2cb0053?apiKey=e10dbafdfd534539bd27071f578fc572&amp;"/>
+       </a>
+       <a aria-label="Twitter" class="social-icon" href="#">
+        <img alt="Twitter icon" src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/a6aae5fbfc0b9890d4ccf8913854c0fa1eaa67d2?apiKey=e10dbafdfd534539bd27071f578fc572&amp;"/>
+       </a>
+       <a aria-label="Instagram" class="social-icon" href="#">
+        <img alt="Instagram icon" src="https://cdn.builder.io/api/v1/image/assets/e10dbafdfd534539bd27071f578fc572/669787cc107492de00db5e1245fa1996fe4ceabd?apiKey=e10dbafdfd534539bd27071f578fc572&amp;"/>
+       </a>
+      </div>
+     </div>
+     <div class="copyright-text">
+      Copyright © 2025 Deep!nsight All Rights Reserved.
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+   const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('drawer');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const navItems = drawer.querySelectorAll('.nav-item');
+
+    hamburger.addEventListener('click', () => {
+      drawer.classList.add('open');
+    });
+
+    closeDrawer.addEventListener('click', () => {
+      drawer.classList.remove('open');
+    });
+
+    // 點選選單項目後關閉選單 & 加上選中效果
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navItems.forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+        drawer.classList.remove('open');
+      });
+    });
+  </script>
+ </body>
+</html>
